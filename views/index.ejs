@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Breakroom</title>
+
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="/bower_components/angular/angular.min.js"></script>
+  <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+  <script src="/js/main.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+<body ng-app ='myApp' ng-controller='mainCtrl'>
+
+</body>
+<!-- navbar -->
+<button ng-hide = 'currentUser' ui-sref='login'> Login </button>
+<button ng-hide = 'currentUser' ui-sref='register'> Register </button>
+<button ng-show = 'currentUser' ui-sref='logout'> Logout </button>
+
+<ui-view></ui-view>
+
+  </body>
+</html>
